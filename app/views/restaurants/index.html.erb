@@ -1,0 +1,4 @@
+<% @restaurants.each do |restaurant| %>
+  <div><%= link_to restaurant.name, restaurant_path(restaurant), class: 'text-decoration-none' %></div>
+<% end %>
+<%= link_to 'New Restaurant', new_restaurant_path, class: 'btn btn-primary mt-2' %>
